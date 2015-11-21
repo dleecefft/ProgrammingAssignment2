@@ -20,7 +20,8 @@ makeCacheMatrix <- function(x = matrix()) {
 
 ## Write a short comment describing this function
 # This takes an object argument created by the makeCacheMatrix function.
-# Tested with both an instantiated object and a new regular matrix
+  
+
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
     m <- x$getinv()

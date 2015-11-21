@@ -1,8 +1,8 @@
 ### Introduction
 
 This my completed version of second programming assignment.
-To date I have not found the lecutres and book align too closely with 
-what we are supposed to do for the assignment. I am quite thankful there was a
+To date I have not found the lectures and book align too closely with 
+what we are supposed to do for the assignments. I am quite thankful there was a
 simplified walk thru with some other functions within a function.
 
 https://github.com/DanieleP/PA2-clarifying_instructions
@@ -10,13 +10,32 @@ https://github.com/DanieleP/PA2-clarifying_instructions
 Based on my understanding of object oriented programming, if this were Java the 
 function within a function would be method within an object. Creating an object
 with the function that calls functions is pretty much like instantiating an
-object with a class definition. Blob = new(blob(arg1,arg2)) now Blob.method1()
+object from a class definition. Blob = new(blob(arg1,arg2)) now Blob.method1()
 means something.
 
 Once I got my head around that it was fairly simple to do the assignment.
 
 There are two other files in this repo, tracing my steps before I updated the 
 official file to be handed in.
+
+Test Suite :-)
+
+I tested with both an instantiated object and a new regular matrix
+as expected a matrix created manually just errors out but works as expected 
+providing the matrix used for the initial object creation is able to be inverted.
+
+Declare a square matrix, this number set seems to work
+thisMatrix <- matrix(1:4,2,2)
+tm <- makeCacheMatrix(thisMatrix)
+cacheSolve(tm)
+# The first time it just prints the inverse but if you run the function a second
+# time the indication it's pulling from cache appears
+
+cacheSolve(tm)
+There is an existing inverse matrix object, contents below:
+     [,1] [,2]
+[1,]   -2  1.5
+[2,]    1 -0.5
 
 
 ### Example: Caching the Mean of a Vector
