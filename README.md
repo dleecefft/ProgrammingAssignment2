@@ -24,21 +24,21 @@ I tested with both an instantiated object and a new regular matrix
 as expected a matrix created manually just errors out but works as expected 
 providing the matrix used for the initial object creation is able to be inverted.
 
-Declare a square matrix, this number set seems to work
-...
+Declare a square matrix, this number set seems to work.
+```
 thisMatrix <- matrix(1:4,2,2)
 tm <- makeCacheMatrix(thisMatrix)
 cacheSolve(tm)
-...
+```
 The first time it just prints the inverse but if you run the function a second
-time the indication it's pulling from cache appears
-...
+time the indication it's pulling from cache appears.
+```
 cacheSolve(tm)
 There is an existing inverse matrix object, contents below:
      [,1] [,2]
 [1,]   -2  1.5
 [2,]    1 -0.5
-...
+```
 
 ### Example: Caching the Mean of a Vector
 
