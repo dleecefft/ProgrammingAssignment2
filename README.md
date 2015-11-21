@@ -1,16 +1,23 @@
 ### Introduction
 
-This second programming assignment will require you to write an R
-function that is able to cache potentially time-consuming computations.
-For example, taking the mean of a numeric vector is typically a fast
-operation. However, for a very long vector, it may take too long to
-compute the mean, especially if it has to be computed repeatedly (e.g.
-in a loop). If the contents of a vector are not changing, it may make
-sense to cache the value of the mean so that when we need it again, it
-can be looked up in the cache rather than recomputed. In this
-Programming Assignment you will take advantage of the scoping rules of
-the R language and how they can be manipulated to preserve state inside
-of an R object.
+This my completed version of second programming assignment.
+To date I have not found the lecutres and book align too closely with 
+what we are supposed to do for the assignment. I am quite thankful there was a
+simplified walk thru with some other functions within a function.
+
+https://github.com/DanieleP/PA2-clarifying_instructions
+
+Based on my understanding of object oriented programming, if this were Java the 
+function within a function would be method within an object. Creating an object
+with the function that calls functions is pretty much like instantiating an
+object with a class definition. Blob = new(blob(arg1,arg2)) now Blob.method1()
+means something.
+
+Once I got my head around that it was fairly simple to do the assignment.
+
+There are two other files in this repo, tracing my steps before I updated the 
+official file to be handed in.
+
 
 ### Example: Caching the Mean of a Vector
 
