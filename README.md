@@ -18,7 +18,7 @@ Once I got my head around that it was fairly simple to do the assignment.
 There are two other files in this repo, tracing my steps before I updated the 
 official file to be handed in.
 
-Test Suite :-)
+#Test Suite :-)
 
 I tested with both an instantiated object and a new regular matrix
 as expected a matrix created manually just errors out but works as expected 
@@ -28,8 +28,8 @@ Declare a square matrix, this number set seems to work
 thisMatrix <- matrix(1:4,2,2)
 tm <- makeCacheMatrix(thisMatrix)
 cacheSolve(tm)
-# The first time it just prints the inverse but if you run the function a second
-# time the indication it's pulling from cache appears
+The first time it just prints the inverse but if you run the function a second
+time the indication it's pulling from cache appears
 
 cacheSolve(tm)
 There is an existing inverse matrix object, contents below:
